@@ -1,0 +1,153 @@
+.deliver-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: "DM Sans", sans-serif;
+    color: #333;
+  }
+
+  .deliver-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .greeting {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+
+  .name {
+    color: #f0932b;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+    color: #555;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  .empty-message {
+    color: #777;
+    font-style: italic;
+  }
+
+  .delivery-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+  }
+
+  .delivery-card.waiting {
+    border-color: #27ae60;
+  }
+
+  .delivery-card.available {
+    border-color: #555;
+  }
+
+  .delivery-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-right: 1rem;
+  }
+
+  .info {
+    flex: 1;
+  }
+
+  .info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .order-number {
+    float: right;
+    font-weight: bold;
+  }
+
+  .info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .btn.accept {
+    background: #3498db;
+    color: #fff;
+  }
+
+  .btn.delivered {
+    background: #f39c12;
+    color: #fff;
+  }
+
+  .btn.call {
+    background: #27ae60;
+    color: #fff;
+  }
+
+  .btn.more-info {
+    background: #2f80ed;
+    color: #fff;
+  }
+
+  .details-panel {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f9f9f9;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .delivery-card.expanded {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .deliver-footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .btn.logout {
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+  }

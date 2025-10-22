@@ -1,0 +1,145 @@
+
+.all-restaurants-page-all-rest {
+  padding: 20px;
+  background-color: white;
+}
+
+.main-content-all-rest {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 0 10%;
+}
+
+.filter-sidebar {
+  background-color:  white;
+  padding: 20px;
+  border-radius: 25px;
+  min-width: 180px;
+  height: fit-content;
+}
+
+.filter-sidebar h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.filter-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-sidebar li {
+  margin-bottom: 12px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.restaurants-section-all-rest {
+  flex: 1;
+}
+
+.restaurants-title-all-rest {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.restaurants-grid-all-rest {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant-card-all-rest {
+  position: relative;
+  width: 300px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.restaurant-card-all-rest:hover {
+  transform: translateY(-3px);
+}
+
+.restaurant-banner-all-rest {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card-overlay-all-rest {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.emoji-badge {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.restaurant-name-all-rest  {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border: 2px solid #555;
+  border-radius: 50%;
+}
+
+.filter-option input:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+  border-radius: 50%;
+  
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 10px;
+  user-select: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.filter-option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}

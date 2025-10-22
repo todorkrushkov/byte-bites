@@ -1,0 +1,70 @@
+
+.modal-overlay-bucket {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+  .modal-content-bucket {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 320px;
+    max-width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align: center;
+  }
+  
+
+  .modal-close-bucket {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.2s;
+  }
+  .modal-close-bucket:hover {
+    color: #333;
+  }
+  
+
+  .modal-content-bucket h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+
+  .card-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .card-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px var(--accent-color)33;
+  }
+  
+
+  .modal-content-bucket .blue-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  

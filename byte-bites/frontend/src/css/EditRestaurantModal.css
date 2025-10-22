@@ -1,0 +1,59 @@
+.edit-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.edit-modal-overlay.open {
+  opacity: 1;
+}
+.edit-modal-overlay.closing {
+  opacity: 0;
+}
+
+.edit-modal {
+  transform: translateY(-20px) scale(0.95);
+  opacity: 0;
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+.edit-modal.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+.edit-modal.closing {
+  transform: translateY(-20px) scale(0.95);
+  opacity: 0;
+}
+
+.edit-modal {
+  background: var(--bg-color);
+  border-radius: 50px;
+  padding: 50px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.edit-modal .section-name {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.edit-modal .input-layout{
+  margin-bottom: 30px;
+}
+
+.edit-modal .blue-btn{
+  display: block;
+  margin: auto auto;
+}

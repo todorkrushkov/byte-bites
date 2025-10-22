@@ -1,0 +1,164 @@
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.custom-modal {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.add-form {
+    flex: 1;
+  }
+  .add-form h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  .add-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    position: relative;
+  }
+  .add-form label input,
+  .add-form label select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+  }
+  .add-form button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .edit-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-menu h2 {
+    font-size: 2rem;
+    color: #4f5d75;
+    margin-bottom: 0.5rem;
+  }
+
+  .category-filter {
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .menu-list {
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .menu-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 2px solid var(--accent-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s;
+  }
+
+  .menu-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .menu-card-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.8rem;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .menu-card-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .menu-card-info p {
+    margin: 0.2rem 0 0;
+    font-size: 1rem;
+    color: var(--accent-color);
+  }
+
+  .menu-card-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .custom-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .add-form,
+  .edit-menu {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .group_buttons{
+    width: 70px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #edit-btn{
+    background-color: green;
+  }
+
+  #delete-btn{
+    background-color: red;
+  }
+
+  .select-input{
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid #808080;
+    padding-left: 15px;
+    
+  }
+  .input-layout{
+    padding-bottom: 10px;
+  }
